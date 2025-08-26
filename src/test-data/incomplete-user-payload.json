@@ -1,0 +1,18 @@
+{
+  "address": {
+    "street": "Test Avenue",
+    "suite": "Suite 123",
+    "city": "Testville",
+    "zipcode": "12345-6789",
+    "geo": {
+      "lng": "98.7654"
+    }
+  },
+  "phone": "1-555-123-4567",
+  "website": "testuser.dev",
+  "company": {
+    "name": "Test Solutions Inc",
+    "catchPhrase": "Testing makes perfect",
+    "bs": "optimize end-to-end solutions"
+  }
+}

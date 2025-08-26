@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Hello world",
+    "body": "My first fake post",
+    "userId": 1
+  },
+  {
+    "id": 1,
+    "title": "Zażółć gęślą jaźń",
+    "body": "Polish characters and unicode 👍",
+    "userId": 2
+  },
+  {
+    "id": 1,
+    "title": "",
+    "body": "Empty title edge case",
+    "userId": 3
+  },
+  {
+    "id": 1,
+    "title": "Very long post",
+    "body": "xxxxxxxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxxxxxxxxaxax",
+    "userId": 4
+  },
+  {
+    "id": 1,
+    "title": "Non-ASCII Glyphs ©",
+    "body": "😀🚀✨🔥💧🌟🎉",
+    "userId": 5
+  }
+]
