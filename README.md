@@ -1,6 +1,6 @@
 # 🎭 API Testing Framework with Playwright
 
-Automated API testing framework for JSONPlaceholder API using Playwright.
+Automated API testing framework for JSONPlaceholder using Playwright.
 
 ## 📦 Installation
 
