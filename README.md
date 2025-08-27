@@ -61,7 +61,7 @@ npx playwright show-report
    - Status codes and headers are verified for all test case
    - Response body contents are verified for certain test cases
 
-3. Test Cases
+3. Covered Test Cases Overview
 - [docs/test-cases.md](docs/test-cases.md)
 
 ## Limitations & Known Issues
