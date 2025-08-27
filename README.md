@@ -95,7 +95,8 @@ HomeAssignmentAPITests/
 │   ├── utils/             # Utilities, endpoint paths definition
 │   └── merge.fixture.ts   # Central configuration and merging point for Playwright Test Fixtures
 ├── tests/
-│   └── posts.spec.ts      # API test cases
+│   ├── posts.spec.ts      # API test cases
+│   └── users.spec.ts
 └── docs/
     └── test-cases.md      # Test documentation
 ```
