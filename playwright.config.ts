@@ -10,7 +10,7 @@ export default defineConfig({
   fullyParallel: false,
   retries: 0,
   workers: undefined,
-  reporter: [['list']],
+  reporter: [['list'], ['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     baseURL: 'https://jsonplaceholder.typicode.com',
     actionTimeout: 0,
