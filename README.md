@@ -47,6 +47,20 @@ npx playwright test --reporter=html
 npx playwright show-report
 ```
 
+## 🔁 CI: Bitbucket Pipelines
+
+Automated runs on **Bitbucket Pipelines** for the `main` branch and for **Pull Requests**.
+
+### How to trigger the pipeline
+
+1. Push to Bitbucket (Pipelines run on pushes to Bitbucket, not GitHub):
+
+```bash
+git push bitbucket main
+```
+
+2. For PRs: open a Pull Request in Bitbucket (the pipeline will start automatically).
+
 ## 🧭 Assumptions & Notes
 
 1. Testing Environment
@@ -62,6 +76,7 @@ npx playwright show-report
    - Response body contents are verified for certain test cases
 
 3. Covered Test Cases Overview
+
 - 📚 [docs/test-cases.md](docs/test-cases.md)
 
 ## ⚠️ Limitations & Known Issues

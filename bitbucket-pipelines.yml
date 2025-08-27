@@ -2,7 +2,7 @@
 image: mcr.microsoft.com/playwright:v1.55.0-noble
 
 options:
-  max-time: 5  
+  max-time: 5
 
 pipelines:
   branches:
@@ -10,13 +10,14 @@ pipelines:
       - step:
           name: API tests (main)
           caches:
-            - node        # cache for ~/.npm
+            - node # cache for ~/.npm
           script:
             - node -v
             - npm ci
             - export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
             # - npx playwright install # UI Tests not required
             - npm test
+            - npx playwright test --reporter=html
           artifacts:
             - playwright-report/**
             - test-results/**
@@ -29,7 +30,7 @@ pipelines:
             - node
           script:
             - npm ci
-            - npm test
+            - npx playwright test --reporter=html
           artifacts:
             - playwright-report/**
             - test-results/**
