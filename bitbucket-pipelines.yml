@@ -1,0 +1,35 @@
+# bitbucket-pipelines.yml
+image: mcr.microsoft.com/playwright:v1.55.0-noble
+
+options:
+  max-time: 5  
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: API tests (main)
+          caches:
+            - node        # cache for ~/.npm
+          script:
+            - node -v
+            - npm ci
+            - export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+            # - npx playwright install # UI Tests not required
+            - npm test
+          artifacts:
+            - playwright-report/**
+            - test-results/**
+
+  pull-requests:
+    '**':
+      - step:
+          name: API tests (PR)
+          caches:
+            - node
+          script:
+            - npm ci
+            - npm test
+          artifacts:
+            - playwright-report/**
+            - test-results/**
