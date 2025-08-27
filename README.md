@@ -62,7 +62,7 @@ npx playwright show-report
    - Response body contents are verified for certain test cases
 
 3. Test Cases
-- [docs/test-cases.md]
+- [docs/test-cases.md](docs/test-cases.md)
 
 ## Limitations & Known Issues
 
