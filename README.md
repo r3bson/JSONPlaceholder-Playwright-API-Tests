@@ -50,14 +50,14 @@ npx playwright show-report
 ## 🧭 Assumptions & Notes
 
 1. Testing Environment
-   - Tests run against JSONPlaceholder API (https://jsonplaceholder.typicode.com)
+   - Targets: https://jsonplaceholder.typicode.com
    - No authentication required
    - API is publicly accessible
 
 2. Test Design
-   - Test cases are designed using Arrange, Act, Assert (AAA) pattern
+   - AAA pattern (Arrange → Act → Assert)
    - Tests are independent and can run in parallel
-   - DRY (Don't Repeat Yourself) principle makes the framework more maintainable
+   - DRY utils/fixtures for maintainability
    - Status codes and headers are verified for all test case
    - Response body contents are verified for certain test cases
 
@@ -68,7 +68,7 @@ npx playwright show-report
 
 1. API Limitations
    - JSONPlaceholder is a fake API - resources (POST/PUT/PATCH/DELETE) are not updated on the server
-   - POST method always returns ids which are not supported for further GET requests, e.g. id: 101
+   - POST returns synthetic IDs (e.g. id: 101) which are not supported for further GET requests
 
 2. Framework Limitations
    - No support for authentication (not needed for this API)
