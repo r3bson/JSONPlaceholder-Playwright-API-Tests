@@ -84,7 +84,7 @@ npx playwright show-report
 ## 🗂️ Project Structure
 
 ```
-HomeAssignmentAPITests/
+JSONPlaceholder-Playwright-API-Tests/
 ├── src/
 │   ├── assertions/        # Separated assertions logic
 │   ├── factories/         # Test data factories
