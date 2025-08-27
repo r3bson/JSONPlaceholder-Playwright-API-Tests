@@ -12,7 +12,7 @@ test.describe('Verify /users API Endpoint', () => {
   let userId: number;
   let userPayload: UserPayload;
 
-  test.beforeAll('Create a user for futher test usage - isolation', async ({ usersRequest }) => {
+  test.beforeAll('Create a user for futher test usage', async ({ usersRequest }) => {
     userPayload = createRandomUser();
     const response = await usersRequest.post(userPayload);
     const responseBody = await response.json();

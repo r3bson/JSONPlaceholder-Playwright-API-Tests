@@ -11,7 +11,7 @@ import postPayload from '../src/test-data/post-payload.json';
 test.describe('Verify /posts API Endpoint', () => {
   let postId: number;
 
-  test.beforeAll('Create a post for futher test usage - isolation', async ({ postsRequest }) => {
+  test.beforeAll('Create a post for futher test usage', async ({ postsRequest }) => {
     const response = await postsRequest.post(postPayload);
     const responseBody = await response.json();
     postId = responseBody.id;
