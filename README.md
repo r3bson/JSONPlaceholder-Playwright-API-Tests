@@ -96,6 +96,9 @@ git push bitbucket main
    - DELETE response status code inconsistency (204 vs 200)
    - POST with incomplete User payload results in 200 (should be 400 with error message)
 
+4. Bitbucket Pipelines Failing
+   - Due to above bugs 3 out of 11 Test Cases are failing and that is expected
+
 ## 🗂️ Project Structure
 
 ```
