@@ -17,6 +17,7 @@ Automated API testing framework for JSONPlaceholder API using Playwright.
 git clone https://github.com/r3bson/JSONPlaceholder-Playwright-API-Tests
 
 # Navigate to project home directory
+cd JSONPlaceholder-Playwright-API-Tests
 
 # Install dependencies
 npm install
