@@ -86,7 +86,7 @@ npx playwright show-report
 ```
 HomeAssignmentAPITests/
 ├── src/
-│   ├── assertions/        # Custom assertions logic
+│   ├── assertions/        # Separated assertions logic
 │   ├── factories/         # Test data factories
 │   ├── fixtures/          # Abstracts request setup logic from test files
 │   ├── models/            # Interfaces for request payload structure
