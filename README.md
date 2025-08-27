@@ -58,7 +58,7 @@ npx playwright show-report
    - Test cases are designed using Arrange, Act, Assert (AAA) pattern
    - Tests are independent and can run in parallel
    - DRY (Don't Repeat Yourself) principle makes the framework more maintainable
-   - Response schemas, status codes and headers are verified for all test case
+   - Status codes and headers are verified for all test case
    - Response body contents are verified for certain test cases
 
 ## Limitations & Known Issues
