@@ -2,15 +2,15 @@
 
 Automated API testing framework for JSONPlaceholder API using Playwright.
 
-📦 ## Installation
+## 📦 Installation
 
-✅ ### Prerequisites
+### ✅ Prerequisites
 
 - Node.js (v16.3.0 or higher)
 - npm (v8.0.0 or higher)
 - macOS/Linux/Windows
 
-🔧 ### Dependencies Installation
+### 🔧 Dependencies Installation
 
 ```bash
 # Clone the repository
@@ -26,7 +26,7 @@ npm install
 npx playwright install
 ```
 
-▶️ ## Running Tests
+## ▶️ Running Tests
 
 ### All Tests
 
@@ -47,7 +47,7 @@ npx playwright test --reporter=html
 npx playwright show-report
 ```
 
-🧭 ## Assumptions & Notes
+## 🧭 Assumptions & Notes
 
 1. Testing Environment
    - Tests run against JSONPlaceholder API (https://jsonplaceholder.typicode.com)
@@ -64,7 +64,7 @@ npx playwright show-report
 3. Covered Test Cases Overview
 - 📚 [docs/test-cases.md](docs/test-cases.md)
 
-⚠️ ## Limitations & Known Issues
+## ⚠️ Limitations & Known Issues
 
 1. API Limitations
    - JSONPlaceholder is a fake API - resources (POST/PUT/PATCH/DELETE) are not updated on the server
@@ -81,7 +81,7 @@ npx playwright show-report
    - DELETE response status code inconsistency (204 vs 200)
    - POST with incomplete User payload results in 200 (should be 400 with error message)
 
-🗂️ ## Project Structure
+## 🗂️ Project Structure
 
 ```
 HomeAssignmentAPITests/
@@ -100,6 +100,6 @@ HomeAssignmentAPITests/
     └── test-cases.md      # Test documentation
 ```
 
-📑 ## Test Report
+## 📑 Test Report
 
 - Sample console report [docs/sample-report.png](docs/sample-report.png)
