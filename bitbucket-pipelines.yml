@@ -16,7 +16,7 @@ pipelines:
             - npm ci
             - export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
             # - npx playwright install # UI Tests not required
-            - npx playwright test --reporter=html
+            - npm test
           artifacts:
             - playwright-report/**
             - test-results/**
@@ -29,7 +29,7 @@ pipelines:
             - node
           script:
             - npm ci
-            - npx playwright test --reporter=html
+            - npm test
           artifacts:
             - playwright-report/**
             - test-results/**
